@@ -1,0 +1,119 @@
+html {
+    scroll-behavior: smooth; /*Web sitesinde kaydırma çubuğu getirir*/
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #E9EEF6;   /* Açık mavi-gri arka plan */
+    color: #2E4057;              /* Göz dostu metin rengi */
+}
+section {
+    background-color: #E9EEF6;
+    padding: 100px 0;
+}
+.section_title {
+    margin-bottom: 30px;
+}
+.section_title h2 {
+    position: relative;
+    text-align: center;
+    color: #1B4F72;              /* Başlık rengi */
+    font-size: 30px;
+    transition: all .3s ease-in-out; /*Animasyon geçiş efekti sunar ve 03 saniyeyle yumuşak bir şşekilde gerçekleşir*/
+}
+.section_title h2:hover {
+    color: #3498DB;              /* Hover – canlı açık mavi */
+}
+/*--------Header-----------*/
+header {
+    background-color: #2C3E50;   /* Lacivert-gri header */
+    border-bottom: 2px solid #5DADE2;
+    position: fixed;
+    width: 100%;
+    z-index: 5;  /*Hangisinin önde olduğunu belirler*/
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+.nav_links {
+    display: flex;
+}
+.nav_links li a {
+    margin-left: 15px;
+    color: #E9EEF6;              /* Açık metin */
+    padding: 6px 15px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out; /*Geçiş efektini tanımlar*/
+}
+.nav_links li a:hover {
+    background: #5DADE2;         /* Yumuşak mavi hover */
+    color: white;
+}
+.logo h2 a {
+    color: #3498DB;              /* Logo için açık mavi */
+    text-transform: uppercase; /*Tüm harfleri büyük yazar*/
+}
+h2 {
+    color: #1B4F72;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6; /*Satırlar arası boşluk*/
+    text-align: justify;
+    margin-bottom: 30px;
+}
+img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.rde, .cde {
+    float: inline-end;
+}
+/* -------- Footer -------- */
+footer {
+    background-color: #2C3E50;
+    color: #D6EAF8;              /* Açık gri-mavi yazı */
+    padding: 20px;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /*Satır ve sütün düzeyinde hizlama yapar*/
+}
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: #5DADE2;              /* Açık mavi vurgu */
+}
+.footer-section a {
+    color: #D6EAF8;
+    text-decoration: none; /*Metin dekarasyonu olmasın*/
+}
+.footer-section a:hover {
+    color: #5DADE2;
+}
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;  /*Yazı boyutunu ayarlar */  /*Y*/
+    color: #AEB6BF;
+}
